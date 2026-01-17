@@ -1,11 +1,12 @@
 "use client";
 
-import { LiveblocksProvider, RoomProvider, ClientSideSuspense, useOthers } from "@liveblocks/react/suspense";
-
-function Room() {
-  const others = useOthers();
-  return <div>There are {others.length} other user(s) online</div>;
-}
+import {
+  LiveblocksProvider,
+  RoomProvider,
+  ClientSideSuspense,
+  useOthers,
+} from "@liveblocks/react/suspense";
+import { Room } from "./Room";
 
 export default function App() {
   return (

@@ -1,10 +1,14 @@
 "use client";
 
 import { useOthers } from "@liveblocks/react/suspense";
-
+import { Button } from "./components/ui/button";
 export function Room() {
   const others = useOthers(); // Array of other connected users
   const userCount = others.length;
-
-  return <div>There are {userCount} other user(s) online</div>;
+  console.log(others);
+  return (
+    <div >
+      <Button>Gajay gyatt</Button>
+    </div>
+  );
 }
